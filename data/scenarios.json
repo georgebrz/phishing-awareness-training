@@ -1,0 +1,109 @@
+[
+  {
+    "id": 1,
+    "difficulty": "beginner",
+    "title": "Account Verification Required",
+    "type": "email",
+    "sender": "support@secure-bank-login247.com",
+    "subject": "Urgent: Verify Your Account Immediately",
+    "content": "Dear Customer,\n\nWe have detected unusual activity on your account. Your account will be suspended within 24 hours unless you verify your details immediately.\n\nClick the link below to confirm your information.",
+    "answer": "phishing",
+    "explanation": "This is phishing because it uses urgent language, a generic greeting, a suspicious sender address, and asks the user to verify account details through a link."
+  },
+
+  {
+    "id": 2,
+    "difficulty": "beginner",
+    "title": "Parcel Delivery Problem",
+    "type": "email",
+    "sender": "deliveries@parcel-update-service.com",
+    "subject": "Delivery Failed",
+    "content": "Your parcel could not be delivered today.\n\nA small redelivery fee is required before another attempt can be made.\n\nClick below to arrange delivery.",
+    "answer": "phishing",
+    "explanation": "This is phishing because it includes an unexpected payment request, creates pressure, and encourages the user to click a link."
+  },
+
+  {
+    "id": 3,
+    "difficulty": "beginner",
+    "title": "University Library Notice",
+    "type": "email",
+    "sender": "library@arden.ac.uk",
+    "subject": "Library Opening Hours Update",
+    "content": "The library opening hours have been updated for the summer period.\n\nPlease visit the university website for further information.",
+    "answer": "legitimate",
+    "explanation": "This appears legitimate because it uses professional language, does not request personal information, and comes from an appropriate university-style domain."
+  },
+
+  {
+    "id": 4,
+    "difficulty": "intermediate",
+    "title": "Microsoft Password Reset",
+    "type": "email",
+    "sender": "security@microsoft-passwordsupport.com",
+    "subject": "Password Reset Request",
+    "content": "A password reset request was received for your account.\n\nIf this was not you, click below immediately to secure your account.",
+    "answer": "phishing",
+    "explanation": "The sender address is not an official Microsoft domain and the email attempts to create urgency and fear."
+  },
+
+  {
+    "id": 5,
+    "difficulty": "intermediate",
+    "title": "Amazon Order Confirmation",
+    "type": "email",
+    "sender": "orders@amazon.co.uk",
+    "subject": "Order Confirmation",
+    "content": "Thank you for your order.\n\nYour order is currently being processed and you will receive a dispatch notification shortly.",
+    "answer": "legitimate",
+    "explanation": "The message contains no request for sensitive information and appears consistent with a standard order confirmation."
+  },
+
+  {
+    "id": 6,
+    "difficulty": "intermediate",
+    "title": "Outstanding Invoice",
+    "type": "email",
+    "sender": "accounts@invoice-department.net",
+    "subject": "Outstanding Invoice",
+    "content": "Please review the attached invoice and submit payment within 24 hours to avoid service interruption.",
+    "answer": "phishing",
+    "explanation": "Unexpected invoices are a common phishing technique, especially when combined with pressure to act quickly."
+  },
+
+  {
+    "id": 7,
+    "difficulty": "advanced",
+    "title": "Manager Gift Card Request",
+    "type": "email",
+    "sender": "j.smith.management@gmail.com",
+    "subject": "Quick Request",
+    "content": "Hi,\n\nI'm currently in a meeting and need you to purchase gift cards for a client. Please send the codes as soon as possible.\n\nI'll explain later.",
+    "answer": "phishing",
+    "explanation": "This is a common business email compromise attack that uses authority, urgency, and an unusual financial request."
+  },
+
+  {
+    "id": 8,
+    "difficulty": "advanced",
+    "title": "Cloud Document Share",
+    "type": "email",
+    "sender": "notifications@secure-document-share.com",
+    "subject": "Document Shared With You",
+    "content": "A document titled 'Project Update Q3.pdf' has been shared with you.Please review the document and provide any feedback by the end of the week.Click below to view the file.",
+    "answer": "phishing",
+    "explanation": "The sender appears legitimate at first glance but is not linked to a recognised cloud storage provider and provides little context."
+  },
+
+  {
+    "id": 9,
+    "difficulty": "advanced",
+    "title": "Banking Security Alert",
+    "type": "email",
+    "sender": "security@lloydsbank.co.uk",
+    "subject": "New Device Sign-In",
+    "content": "A new device has signed in to your online banking account.If this was you, no action is required.If you do not recognise this activity, please access your account through the official banking website or mobile application.",
+    "answer": "legitimate",
+    "explanation": "The email directs users to official channels and does not request passwords, account details, or immediate payment."
+  }
+]

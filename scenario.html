@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Training Scenario</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <h1>Phishing Awareness Training Application</h1>
+    </header>
+
+    <div class="container">
+      <div class="nav-bar">
+        <a class="nav-btn" href="index.html">Home</a>
+      </div>
+
+      <p id="difficultyLabel"></p>
+
+      <p id="progress"></p>
+
+      <div class="progress-bar">
+        <div id="progressFill" class="progress-fill"></div>
+      </div>
+
+      <h1 id="scenarioTitle">Loading...</h1>
+
+      <div id="scenarioBox" class="email-card">
+        <div class="email-header">
+          <p><strong>From:</strong> <span id="sender"></span></p>
+          <p><strong>Subject:</strong> <span id="subject"></span></p>
+        </div>
+
+        <hr />
+
+        <p id="content"></p>
+      </div>
+
+      <button id="phishingBtn" class="btn" onclick="checkAnswer('phishing')">
+        Phishing
+      </button>
+
+      <button
+        id="legitimateBtn"
+        class="btn"
+        onclick="checkAnswer('legitimate')"
+      >
+        Legitimate
+      </button>
+
+      <div id="feedback"></div>
+    </div>
+
+    <footer>
+      <p>Scam or Safe? - Educational use only</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

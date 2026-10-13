@@ -1,0 +1,496 @@
+/* =============
+   General style
+   ============= */
+html {
+  height: 100%;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef2f7;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* ===========
+   Main layout
+   =========== */
+
+.container {
+  max-width: 1300px;
+  margin: 30px auto;
+  text-align: center;
+  padding: 0 20px;
+  flex: 1;
+}
+
+/* ======
+   Header
+   ====== */
+
+.site-header {
+  background-color: #6366f1;
+  color: white;
+  padding: 18px;
+  text-align: center;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+/* ==========
+   Navigation
+   ========== */
+
+.nav-bar {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.nav-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #6366f1;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn:hover {
+  background-color: #4f46e5;
+  transform: translateY(-2px);
+}
+
+/* =======
+   Buttons
+   ======= */
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px;
+  background-color: #6366f1;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #4f46e5;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========
+   Home page
+   ========= */
+
+.hero-box {
+  background-color: white;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.hero-box h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  max-width: 700px;
+
+  margin: 0 auto 15px auto;
+
+  font-size: 1.2rem;
+
+  color: #4b5563;
+}
+
+.hero-description {
+  max-width: 800px;
+
+  margin: 0 auto 25px auto;
+}
+
+.info-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+
+  margin-top: 30px;
+}
+
+/* ===============
+   Difficulty page
+   =============== */
+
+.difficulty-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.difficulty-card {
+  background-color: white;
+  padding: 18px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.difficulty-card:hover {
+  transform: translateY(-4px);
+}
+
+.difficulty-card .btn {
+  display: block;
+  text-align: center;
+}
+
+.beginner-card {
+  border-left: 8px solid #16a34a;
+}
+
+.intermediate-card {
+  border-left: 8px solid #f59e0b;
+}
+
+.advanced-card {
+  border-left: 8px solid #dc2626;
+}
+.difficulty-card p {
+  min-height: 70px;
+}
+/* =============
+   Scenario page
+   ============= */
+
+#difficultyLabel {
+  display: inline-block;
+  padding: 6px 14px;
+  background-color: #dbeafe;
+  color: #1e40af;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.beginner-label {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.intermediate-label {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.advanced-label {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+#progress {
+  font-weight: bold;
+  color: #374151;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #e5e7eb;
+  border-radius: 20px;
+  margin: 10px 0 20px 0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background-color: #2563eb;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+#scenarioBox {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.email-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: left;
+  margin-bottom: 20px;
+  border: 1px solid #d1d5db;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  line-height: 1.6;
+}
+
+.email-header {
+  background-color: #f9fafb;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.email-header p {
+  margin: 8px 0;
+}
+
+/* ========
+   Feedback
+   ======== */
+
+#feedback {
+  margin-top: 20px;
+}
+
+.feedback {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.feedback h3 {
+  margin-top: 0;
+}
+
+.correct-feedback {
+  background-color: #dcfce7;
+  border-left: 6px solid #16a34a;
+}
+
+.incorrect-feedback {
+  background-color: #fee2e2;
+  border-left: 6px solid #dc2626;
+}
+.feedback button {
+  display: block;
+  margin: 20px auto 0 auto;
+}
+/* ============
+   Results page
+   ============ */
+
+.results-subtitle {
+  font-size: 1.1rem;
+  color: #4b5563;
+}
+
+.results-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+#scoreText {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.high-score {
+  border-left: 15px solid #16a34a;
+  background-color: #f0fdf4;
+}
+
+.medium-score {
+  border-left: 15px solid #f59e0b;
+  background-color: #fffbeb;
+}
+
+.low-score {
+  border-left: 15px solid #dc2626;
+  background-color: #fef2f2;
+}
+
+/* =======================
+   Learning resources page
+   ======================= */
+
+.resource-box {
+  background-color: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.resource-box h2 {
+  margin-top: 0;
+}
+
+/* ======
+   Footer
+   ====== */
+
+footer {
+  margin-top: 40px;
+
+  padding: 10px;
+
+  text-align: center;
+
+  background-color: #6366f1;
+
+  color: white;
+
+  font-size: 0.85rem;
+}
+footer p {
+  margin: 2px 0;
+}
+
+/* =================
+   Responsive layout
+   ================= */
+
+@media (max-width: 600px) {
+  .btn {
+    display: block;
+
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+
+  .difficulty-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ==========
+   Password Checker
+   ========== */
+
+.checker-panel {
+  background-color: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  max-width: 750px;
+}
+
+.checker-panel label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.password-row {
+  display: flex;
+  gap: 10px;
+}
+
+.password-row input {
+  flex: 1;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.small-btn {
+  padding: 14px 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.strength-bar {
+  height: 12px;
+  background-color: #e5e7eb;
+  border-radius: 20px;
+  margin: 25px 0 10px 0;
+  overflow: hidden;
+}
+
+.strength-fill {
+  height: 100%;
+  width: 0%;
+  background-color: #94a3b8;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.strength-label {
+  font-weight: bold;
+}
+
+.feedback-panel {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #f8fafc;
+  border-left: 5px solid #2563eb;
+  border-radius: 8px;
+}
+
+.feedback-panel h3 {
+  margin-top: 0;
+}
+
+.feedback-panel ul {
+  padding-left: 20px;
+}
+
+.secondary-action {
+  margin-top: 20px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e5e7eb;
+  cursor: pointer;
+}
+
+.secondary-action:hover {
+  background-color: #d1d5db;
+}
+
+@media (max-width: 600px) {
+  .password-row {
+    flex-direction: column;
+  }
+}

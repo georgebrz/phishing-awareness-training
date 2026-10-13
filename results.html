@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Training Results</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Phishing Awareness Training Application</h1>
+    </header>
+    <div class="container">
+      <h1>Training Results</h1>
+
+      <p class="results-subtitle">
+        Well done! You have completed this training session.
+      </p>
+
+      <div id="resultsBox" class="results-box">
+        <p id="scoreText"></p>
+
+        <p id="messageText"></p>
+      </div>
+
+      <a class="btn" href="difficulty.html">Try Again</a>
+
+      <a class="btn" href="learning.html">Learning Resources</a>
+
+      <a class="btn" href="index.html">Home</a>
+    </div>
+
+    <footer>
+      <p>Scam or Safe? - Educational use only</p>
+    </footer>
+
+    <script>
+      const score = Number(localStorage.getItem("score"));
+      const total = Number(localStorage.getItem("total"));
+
+      const scoreText = document.getElementById("scoreText");
+      const messageText = document.getElementById("messageText");
+      const resultsBox = document.getElementById("resultsBox");
+
+      let percentage = Math.round((score / total) * 100);
+
+      scoreText.innerHTML =
+        "<strong>Score:</strong> " +
+        score +
+        " / " +
+        total +
+        "<br><strong>Accuracy:</strong> " +
+        percentage +
+        "%";
+
+      if (percentage >= 90) {
+        messageText.textContent =
+          "🏆 Excellent. You showed strong awareness of phishing warning signs.";
+
+        resultsBox.classList.add("high-score");
+      } else if (percentage >= 60) {
+        messageText.textContent =
+          "👍 Good effort. Review the learning resources to improve further.";
+
+        resultsBox.classList.add("medium-score");
+      } else {
+        messageText.textContent =
+          "📚 Keep practising. The learning resources can help you recognise more warning signs.";
+
+        resultsBox.classList.add("low-score");
+      }
+    </script>
+  </body>
+</html>
