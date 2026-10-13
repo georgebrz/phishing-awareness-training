@@ -28,7 +28,7 @@
     "difficulty": "beginner",
     "title": "University Library Notice",
     "type": "email",
-    "sender": "library@arden.ac.uk",
+    "sender": "library@uni.ac.uk",
     "subject": "Library Opening Hours Update",
     "content": "The library opening hours have been updated for the summer period.\n\nPlease visit the university website for further information.",
     "answer": "legitimate",
